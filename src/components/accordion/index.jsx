@@ -8,7 +8,7 @@ export default function Accordion() {
   const [multiple, setMultiple] = useState([]);
 
   function handleSingleSelection(CurrentId) {
-    console.log(CurrentId);
+    // console.log(CurrentId);
     setSelected(CurrentId === selected ? null : CurrentId);
   }
 
@@ -23,7 +23,7 @@ export default function Accordion() {
     setMultiple(copyMultiple);
   }
 
-  console.log(selected, multiple);
+  // console.log(selected, multiple);
   return (
     <div className="wrapper">
       <button
