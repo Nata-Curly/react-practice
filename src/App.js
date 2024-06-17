@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
-import './App.css';
-import Accordion from './components/accordion';
-import ImageSlider from './components/image-slider';
-import RandomColorGenerator from './components/random-color-generator';
-import StarRating from './components/star-rating';
+import "./App.css";
+import Accordion from "./components/accordion";
+import ImageSlider from "./components/image-slider";
+import LoadMore from "./components/load-more";
+import RandomColorGenerator from "./components/random-color-generator";
+import StarRating from "./components/star-rating";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         page={"1"}
         limit={"10"}
       />
+
+      {/* Load more products component */}
+
+      <LoadMore />
     </div>
   );
 }
