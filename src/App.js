@@ -2,6 +2,7 @@
 import "./App.css";
 import Accordion from "./components/accordion";
 import ImageSlider from "./components/image-slider";
+import LightDarkMode from "./components/light-dark-mode";
 import LoadMore from "./components/load-more";
 import QRCodeGenerator from "./components/qr-code-generator";
 import RandomColorGenerator from "./components/random-color-generator";
@@ -36,6 +37,9 @@ function App() {
 
       {/* QR code generator */}
       <QRCodeGenerator />
+
+      {/* Toggle theme component */}
+      <LightDarkMode />
     </div>
   );
 }
