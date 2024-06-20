@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 import Accordion from "./components/accordion";
+import TabTest from "./components/custom-tabs/tab-test";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
 import LoadMore from "./components/load-more";
@@ -44,7 +45,10 @@ function App() {
 
       {/* Scroll indicator component */}
 
-      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
+
+      {/* Custom tabs component */}
+      <TabTest/>
     </div>
   );
 }
