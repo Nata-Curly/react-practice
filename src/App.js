@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 import Accordion from "./components/accordion";
+import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabTest from "./components/custom-tabs/tab-test";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
@@ -48,7 +49,11 @@ function App() {
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
 
       {/* Custom tabs component */}
-      <TabTest/>
+      <TabTest />
+      
+      {/* Custom modal popup component */}
+      <ModalTest />
+      
     </div>
   );
 }
