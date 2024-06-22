@@ -56,11 +56,11 @@ export default function ScrollIndicator({ url }) {
   console.log(data, scrollProgress);
 
   if (errMsg) {
-    return <div>Error ! {errMsg}</div>;
+    return <div>Error! {errMsg}</div>;
   }
 
   if (loading) {
-    return <div>Loading data ! Pleaae wait</div>;
+    return <div>Loading data... Please wait</div>;
   }
 
   return (
