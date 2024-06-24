@@ -3,13 +3,15 @@ import "./App.css";
 import Accordion from "./components/accordion";
 import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabTest from "./components/custom-tabs/tab-test";
+// import FeatureFlags from "./components/feature-flags";
+// import FeatureFlagGlobalState from "./components/feature-flags/context";
 import GithubProfileFinder from "./components/github-profile-finder";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
 import LoadMore from "./components/load-more";
 import QRCodeGenerator from "./components/qr-code-generator";
 import RandomColorGenerator from "./components/random-color-generator";
-import ScrollIndicator from "./components/scroll-indicator";
+// import ScrollIndicator from "./components/scroll-indicator";
 import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import StarRating from "./components/star-rating";
 import TicTacToe from "./components/tic-tac-toe";
@@ -53,18 +55,23 @@ function App() {
 
       {/* Custom tabs component */}
       <TabTest />
-      
+
       {/* Custom modal popup component */}
       <ModalTest />
-      
+
       {/* Github profile finder component */}
-      <GithubProfileFinder/>
+      <GithubProfileFinder />
 
       {/* Search autocomplete component */}
       <SearchAutocomplete />
-      
+
       {/* Tic Tac Toe component */}
-      <TicTacToe/>
+      <TicTacToe />
+
+      {/* FEature Flags component */}
+      {/* <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState> */}
     </div>
   );
 }

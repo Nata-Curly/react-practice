@@ -35,21 +35,21 @@ export default function Accordion() {
       <div className="accordion">
         {data && data.length > 0 ? (
           data.map((dataItem) => (
-            <div className="item">
+            <div className="accordion-item">
               <div
                 onClick={
                   enableMultipleSelection
                     ? () => handleMultipleSelection(dataItem.id)
                     : () => handleSingleSelection(dataItem.id)
                 }
-                className="title"
+                className="accordion-title"
               >
                 <h3>{dataItem.question}</h3>
                 <span>+</span>
               </div>
               {selected === dataItem.id ||
               multiple.indexOf(dataItem.id) !== -1 ? (
-                <div className="content">{dataItem.answer}</div>
+                <div className="accordion-content">{dataItem.answer}</div>
               ) : null}
             </div>
           ))

@@ -12,7 +12,6 @@ export default function SearchAutocomplete() {
   function handleChange(event) {
     const query = event.target.value.toLowerCase();
     setSearchParam(query);
-
     if (query.length > 1) {
       const filteredData =
         users && users.length
@@ -26,7 +25,6 @@ export default function SearchAutocomplete() {
   }
 
   function handleClick(event) {
-    console.log(event.target.innerText);
     setShowDropdown(false);
     setSearchParam(event.target.innerText);
     setFilteredUsers([]);
@@ -35,8 +33,8 @@ export default function SearchAutocomplete() {
   async function fetchListOfUsers() {
     try {
       setLoading(true);
-      const resp = await fetch("http://dummyjson.com/users");
-      const data = resp.json();
+      const response = await fetch("https://dummyjson.com/users");
+      const data = await response.json();
 
       if (data && data.users && data.users.length) {
         setUsers(data.users.map((userItem) => userItem.firstName));
@@ -52,32 +50,25 @@ export default function SearchAutocomplete() {
 
   useEffect(() => {
     fetchListOfUsers();
-  });
+  }, []);
 
-  if (error) {
-    return <div>Error! {error}</div>;
-  }
   console.log(users, filteredUsers);
 
   return (
     <div className="search-autocomplete-container">
       {loading ? (
-        <h1>Loading... Please wait</h1>
+        <h1>Loading Data! Please wait</h1>
       ) : (
         <input
           value={searchParam}
           name="search-users"
           placeholder="Search Users here..."
-          type="text"
           onChange={handleChange}
         />
       )}
 
       {showDropdown && (
-        <Suggestions
-          data={filteredUsers}
-          handleClick={handleClick}
-        ></Suggestions>
+        <Suggestions handleClick={handleClick} data={filteredUsers} />
       )}
     </div>
   );

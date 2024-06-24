@@ -22,21 +22,21 @@
     width: 500px;
 }
 
-.item {
+.accordion-item {
     background: rgb(211, 15, 211);
     margin-bottom: 10px;
     padding: 10px 20px;
     border-radius: 8px;
 }
 
-.title {
+.accordion-title {
     color: #ffffff;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
 
-.content {
+.accordion-content {
     color: #ffffff;
     height: auto;
 }
