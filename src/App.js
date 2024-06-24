@@ -1,77 +1,81 @@
 // import logo from './logo.svg';
 import "./App.css";
-import Accordion from "./components/accordion";
-import ModalTest from "./components/custom-modal-popup/modal-test";
-import TabTest from "./components/custom-tabs/tab-test";
+import UseFetchHookTest from "./components/use-fetch/test";
+// import Accordion from "./components/accordion";
+// import ModalTest from "./components/custom-modal-popup/modal-test";
+// import TabTest from "./components/custom-tabs/tab-test";
 // import FeatureFlags from "./components/feature-flags";
 // import FeatureFlagGlobalState from "./components/feature-flags/context";
-import GithubProfileFinder from "./components/github-profile-finder";
-import ImageSlider from "./components/image-slider";
-import LightDarkMode from "./components/light-dark-mode";
-import LoadMore from "./components/load-more";
-import QRCodeGenerator from "./components/qr-code-generator";
-import RandomColorGenerator from "./components/random-color-generator";
+// import GithubProfileFinder from "./components/github-profile-finder";
+// import ImageSlider from "./components/image-slider";
+// import LightDarkMode from "./components/light-dark-mode";
+// import LoadMore from "./components/load-more";
+// import QRCodeGenerator from "./components/qr-code-generator";
+// import RandomColorGenerator from "./components/random-color-generator";
 // import ScrollIndicator from "./components/scroll-indicator";
-import SearchAutocomplete from "./components/search-autocomplete-with-api";
-import StarRating from "./components/star-rating";
-import TicTacToe from "./components/tic-tac-toe";
-import TreeView from "./components/tree-view";
-import menus from "./components/tree-view/data";
+// import SearchAutocomplete from "./components/search-autocomplete-with-api";
+// import StarRating from "./components/star-rating";
+// import TicTacToe from "./components/tic-tac-toe";
+// import TreeView from "./components/tree-view";
+// import menus from "./components/tree-view/data";
 
 function App() {
   return (
     <div className="App">
-      {/* Accordion component */}
+      {/* Accordion component
       <Accordion />
 
       {/* Random color generator component */}
-      <RandomColorGenerator />
+      {/* <RandomColorGenerator /> */}
 
       {/* Star rating component */}
-      <StarRating />
+      {/* <StarRating /> */}
 
       {/* Image slider component */}
-      <ImageSlider
+      {/* <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      />
+      /> */}
 
       {/* Load more products component */}
-      <LoadMore />
+      {/* <LoadMore /> */}
 
       {/* Tree view component */}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} /> */}
 
       {/* QR code generator */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
 
       {/* Toggle theme component */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
 
       {/* Scroll indicator component */}
 
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
 
       {/* Custom tabs component */}
-      <TabTest />
+      {/* <TabTest /> */}
 
       {/* Custom modal popup component */}
-      <ModalTest />
+      {/* <ModalTest /> */}
 
       {/* Github profile finder component */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
 
       {/* Search autocomplete component */}
-      <SearchAutocomplete />
+      {/* <SearchAutocomplete /> */}
 
       {/* Tic Tac Toe component */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
 
       {/* FEature Flags component */}
       {/* <FeatureFlagGlobalState>
         <FeatureFlags />
       </FeatureFlagGlobalState> */}
+
+      {/* useFetch - custom hook component */}
+      <UseFetchHookTest/>
     </div>
   );
 }
