@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 // import UseFetchHookTest from "./components/use-fetch/test";
-// import UseOnClickOutsideTest from "./components/use-outside-clock/test";
+import UseOnClickOutsideTest from "./components/use-outside-click/test";
 import UseWindowResizeTest from "./components/use-window-resize/test";
 // import Accordion from "./components/accordion";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
@@ -80,7 +80,7 @@ function App() {
       {/* <UseFetchHookTest/> */}
 
       {/* Use Onclick Outside test */}
-      {/* <UseOnClickOutsideTest /> */}
+      <UseOnClickOutsideTest />
 
       {/* Use Window Resize Hook test */}
       <UseWindowResizeTest />
