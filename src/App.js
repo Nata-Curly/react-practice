@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import "./App.css";
-import UseFetchHookTest from "./components/use-fetch/test";
+// import UseFetchHookTest from "./components/use-fetch/test";
+// import UseOnClickOutsideTest from "./components/use-outside-clock/test";
+import UseWindowResizeTest from "./components/use-window-resize/test";
 // import Accordion from "./components/accordion";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
 // import TabTest from "./components/custom-tabs/tab-test";
@@ -22,10 +24,10 @@ import UseFetchHookTest from "./components/use-fetch/test";
 function App() {
   return (
     <div className="App">
-      {/* Accordion component
-      <Accordion />
+      {/* Accordion component */}
+      {/* <Accordion /> */}
 
-      {/* Random color generator component */}
+      {/* Random color generator component*/}
       {/* <RandomColorGenerator /> */}
 
       {/* Star rating component */}
@@ -74,8 +76,14 @@ function App() {
         <FeatureFlags />
       </FeatureFlagGlobalState> */}
 
-      {/* useFetch - custom hook component */}
-      <UseFetchHookTest/>
+      {/* useFetch - custom hook test */}
+      {/* <UseFetchHookTest/> */}
+
+      {/* Use Onclick Outside test */}
+      {/* <UseOnClickOutsideTest /> */}
+
+      {/* Use Window Resize Hook test */}
+      <UseWindowResizeTest />
     </div>
   );
 }
